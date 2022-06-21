@@ -21,9 +21,6 @@ const renderSearchForm = (container: HTMLElement) => {
             <a href="/">Buscar</a>
         </li>
         <li>
-            <a href="/">Favoritos</a>
-        </li>
-        <li>
             <a href="logout.html">Sair</a>
         </li>
     </ul>

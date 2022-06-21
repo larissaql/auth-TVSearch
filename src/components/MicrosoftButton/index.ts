@@ -25,14 +25,16 @@ const onClick = () => {
 
 const renderMicrosoftLoginButton = (container: HTMLElement) => {
   const htmlContent = `
-        <button class="login-button">
+        <div class="login-button-microsoft">
+        <button type="button" class="login-button-microsoft">
             <img src="/assets/img/microsoft.png" alt="Microsoft">
             <span>Entrar com Microsoft</span>
         </button>
+        </div>
     `
 
   container.innerHTML = htmlContent
-  const loginButton = <HTMLButtonElement>document.querySelector('.login-button')
+  const loginButton = <HTMLButtonElement>document.querySelector('.login-button-microsof')
   loginButton.onclick = onClick
 }
 

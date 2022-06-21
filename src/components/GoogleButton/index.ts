@@ -9,10 +9,9 @@ const onClick = () => {
       const credential = GoogleAuthProvider.credentialFromResult(result)
       const token = credential?.accessToken
       const { user } = result
-      const { displayName, photoURL } = user
+      const { displayName } = user
       localStorage.setItem('token', token || '')
       localStorage.setItem('userName', displayName || '')
-      localStorage.setItem('userPhoto', photoURL || '')
       if (token) {
         location.href = 'index.html'
       }
@@ -25,14 +24,16 @@ const onClick = () => {
 
 const renderGoogleLoginButton = (container: HTMLElement) => {
   const htmlContent = `
-        <button class="login-button">
+      <div class="login-button-google">
+        <button type="button" id="login-button-google">
             <img src="/assets/img/google.png" alt="Google">
             <span>Entrar com Google</span>
         </button>
+      </div>
     `
 
   container.innerHTML = htmlContent
-  const loginButton = <HTMLButtonElement>document.querySelector('.login-button')
+  const loginButton = <HTMLButtonElement>document.querySelector('.login-button-google')
   loginButton.onclick = onClick
 }
 

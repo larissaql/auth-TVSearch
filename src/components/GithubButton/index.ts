@@ -11,10 +11,9 @@ const onClick = () => {
       const credential = GithubAuthProvider.credentialFromResult(result)
       const token = credential?.accessToken
       const { user } = result
-      const { displayName, photoURL } = user
+      const { displayName } = user
       localStorage.setItem('token', token || '')
       localStorage.setItem('userName', displayName || '')
-      localStorage.setItem('userPhoto', photoURL || '')
       if (token) {
         location.href = 'index.html'
       }
@@ -27,14 +26,14 @@ const onClick = () => {
 
 const renderGithubLoginButton = (container: HTMLElement) => {
   const htmlContent = `
-        <button class="login-button">
+        <button id="login-button-github">
             <img src="/assets/img/github.png" alt="Github">
             <span>Entrar com Github</span>
         </button>
     `
 
   container.innerHTML = htmlContent
-  const loginButton = <HTMLButtonElement>document.querySelector('.login-button')
+  const loginButton = <HTMLButtonElement>document.querySelector('#login-button-github')
   loginButton.onclick = onClick
 }
 

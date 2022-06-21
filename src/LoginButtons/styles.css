@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #7a9e7e;
+
+}
+
+h1 {
+    font-family: 'title';
+    color: #001a23;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    width: 300px;
+    margin: 50px auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #cad2c5;
+    padding: 10px;
+    box-shadow: 3px 3px 5px #2f3e46;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+button * {
+    vertical-align: middle;
+}
+
+button img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+button span {
+    font-family: 'title';
+    font-size: 120%;
+}
