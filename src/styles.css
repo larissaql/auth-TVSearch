@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    background-color: #7a9e7e;
+    background-color: #1c1f1d;
 
 }
 
@@ -39,8 +39,8 @@ body {
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
-    color: var(--btn-color);
-    color: #2f3e46;
+    color: white;
+    color: #3d348b;
     font-family: "title";
     font-size: 100%;
 }
@@ -60,7 +60,7 @@ body {
 
 .tv-card h3 {
     font-family: "title";
-    color: #001a23;
+    color: white;
 }
 
 .show-banner img{
@@ -73,7 +73,7 @@ a {
 
 #show-container {
     display: flex;
-    background-color: #31493c;
+    background-color: #7678ed;
     padding: 20px;
     border-radius: 10px;
     width: 60%;
@@ -83,7 +83,7 @@ a {
 #image-container {
     width: 50%;
     text-align: center;
-    background-color: #31493c;
+    background-color: #7678ed;
     padding: 18px 0;
     border-radius: 10px;
 }
@@ -105,8 +105,8 @@ a {
 
 #backlink {
     display: block;
-    background-color: #7a9e7e;
-    color: #31493c;
+    background-color: #3d348b;
+    color: #7678ed;
     font-family: 'title';
     width: 100px;
     text-align: center;
@@ -119,7 +119,7 @@ a {
 
 
 #header {
-    background-color: #001a23;
+    background-color: #7678ed;
     padding: 20px;
     font-family: 'title';
     display: flex;
@@ -131,7 +131,7 @@ a {
 }
 
 #header a:hover {
-    color: #7a9e7e;
+    color: #3d348b;
 }
 
 #header * {

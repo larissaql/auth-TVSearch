@@ -34,7 +34,7 @@ const renderMicrosoftLoginButton = (container: HTMLElement) => {
     `
 
   container.innerHTML = htmlContent
-  const loginButton = <HTMLButtonElement>document.querySelector('.login-button-microsof')
+  const loginButton = <HTMLButtonElement>document.querySelector('.login-button-microsoft')
   loginButton.onclick = onClick
 }
 
